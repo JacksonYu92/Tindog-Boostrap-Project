@@ -1,33 +1,37 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-h1 {
+h1, h2, h3 {
+  font-family: 'Montserrat-black', sans-serif;
+}
+
+/* Headings */
+.big-heading {
   font-family: 'Montserrat-black', sans-serif;
   font-weight: bold;
   font-size: 3.5rem;
   line-height: 1.5;
 }
 
-h2 {
-  font-family: 'Montserrat-black', sans-serif;
+.section-heading{
   font-size: 3rem;
   line-height: 1.5;
 }
-
-h3 {
-  font-family: 'Montserrat-black', sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
+/* Container */
+.container-fluid {
+  padding: 7% 15%;
 }
 
-#title {
+/* Section */
+.colored-section {
   background-color: #ff4c68;
   color: #fff;
 }
 
-.container-fluid {
-  padding: 3% 20% 7%;
+.white-section {
+  background-color: #fff;
 }
 
 /* Navigation Bar */
@@ -55,12 +59,30 @@ h3 {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
 /* TItle Image */
 .title-image {
   width: 60%;
   transform: rotate(25deg);
   position: absolute;
   right: 30%;
+}
+
+@media (max-width: 1280px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
 
 .iphone-container {
@@ -70,10 +92,12 @@ h3 {
 /* Features */
 #features {
   position: relative;
-  background-color: #fff;
-  padding: 7% 15%;
-  text-align: center;
   line-height: 2;
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .feature-box {
@@ -95,13 +119,12 @@ h3 {
 
 /* Testimonials */
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -112,7 +135,6 @@ h3 {
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -126,6 +148,21 @@ h3 {
   padding: 100px;
 }
 
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* Footer Section */
+
+.footer-icon {
+  margin: 20px 15px;
+}
+
+.copyright {
+  margin-top: 2rem;
 }
